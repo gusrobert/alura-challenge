@@ -1,0 +1,91 @@
+body {
+    background-color: #E5E5E5;
+}
+
+.logo {
+    width: 120px;
+    padding: 40px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.content__crypt {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.content__crypt__text {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 40px;
+}
+
+.content__crypt__text > textarea {
+    width: 680px;
+    border: none;
+    background-color: transparent;
+    text-align: right;
+}
+
+.content__crypt__buttons {
+    display: flex;
+    padding: 0 40px;
+    gap: 24px;
+}
+
+.content__crypt__button {
+    background-color: #0A3871;
+    color: #ffffff;
+    border: none;
+}
+
+.content__decrypt__button {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.content__crypt__buttons > button {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+}
+
+.content__crypt__result_text {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: 40px 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 32px;
+    padding: 20px 20px;
+    width: 400px;
+    height: 944px;
+    background-color: #ffffff;
+    text-align: center;
+    gap: 16px;
+}
+
+.content__crypt__result__message {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    gap: 16px;
+
+}
+
+.content__result_text__title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content__result_text__description {
+    font-size: 16px;
+}

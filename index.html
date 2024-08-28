@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <script src="app.js"></script>
+</head>
+<body>
+    <main class="content">
+        <section class="content__crypt">
+            <img class="logo" src="./assets/Logo.png" alt="Logo da Alura">
+            <div class="content__crypt__text">
+                <textarea name="input_text" id="input_text" placeholder="Digite seu texto"></textarea>
+            </div>
+            <div class="content__crypt__buttons">
+                <button onclick="encryptText()" class="content__crypt__button">Criptografar</button>
+                <button onclick="decryptText()" class="content__decrypt__button">Descriptografar</button>
+            </div>
+        </section>
+        <div id="result_area" class="content__crypt__result_area">
+            <div class="content__crypt__result_text" id="content__crypt__no_text">
+                <img src="./assets/background-image.svg" alt="Nenhum texto processado">
+                <div class="content__crypt__result__message">
+                    <p class="content__result_text__title"><strong>Nenhuma mensagem encontrada</strong></p>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+
+            <div class="content__crypt__result_text" id="content__crypt__result_text" style="display: none;">
+                <p class="content__crypt__text_result" id="content__crypt__text_result"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Gustavo Robert</p>
+    </footer>
+</body>
+</html>
